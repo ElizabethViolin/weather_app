@@ -39,7 +39,6 @@ def fetch_weather_and_forecast(city, api_key, current_weather_url, forecast_url)
     response = requests.get(current_weather_url.format(city, api_key)).json()
     lat, lon = response.get('coord', {}).get('lat'), response.get('coord', {}).get('lon')
     forecast_response = requests.get(forecast_url.format(lat, lon, api_key)).json()
-    print("!!",response)
     weather_data = {
         "city": city,
         "temperature": round(response['main']['temp'] - 273.15, 2),
