@@ -1,0 +1,12 @@
+/weather_app/.env
+**/__pycache__
+**/.pyc
+**/*.pyo
+**/*.pyd
+**/.git
+**/.venv
+**/venv
+**/ENV
+**/env
+db.sqlite3
+**/.DS_Store
